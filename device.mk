@@ -287,6 +287,25 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# DRM modetest
+PRODUCT_PACKAGES += \
+    modetest
+
+# Raspberry Pi utils
+PRODUCT_PACKAGES += \
+    dtmerge \
+    dtoverlay \
+    pinctrl \
+    vcgencmd \
+    vclog \
+    vcmailbox
+
+# V4L utils
+PRODUCT_PACKAGES += \
+    cec-ctl \
+    ir-keytable \
+    v4l2-ctl
+
 PRODUCT_COPY_FILES += \
     hardware/broadcom/wlan/bcmdhd/config/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
@@ -295,3 +314,4 @@ PRODUCT_COPY_FILES += \
 
 # Window extensions
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
+

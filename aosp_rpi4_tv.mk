@@ -16,8 +16,9 @@ PRODUCT_PACKAGES += \
     DocumentsUI \
     LeanbackIME \
     TvProvision \
+    TvSettingsTwoPanel \
     TvSampleLeanbackLauncher \
-    TvSettingsTwoPanel
+    F-Droid
 
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
